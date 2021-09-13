@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--test -->
+<head>
+  <meta charset="utf-8">
+  <title>Aileen Chan's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+  <body>
+
+	<!-- Start of Navigation bar -->
+    <div class="main-nav">
+        <ul class="nav">
+			<li class="name">Aileen Chan</li>
+			<li><a href="index.html">Personal Information</a></li>
+			<li><a href="interest.html">Interest in IT</a></li>
+			<li><a href="idealJob.html">Ideal Job</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			<li><a href="projectIdea.html">Project Idea</a></li>
+			<li><a href="references.html">References</a></li>
+        </ul>
+    </div>
+
+    <header>
+		<!-- Profile Picture and Header Background -->
+		<img src="images/aicProfilePic.jpg" alt="Profile Picture" class="profile-image">
+		<h1 class="tag name">Welcome! I'm Aileen</h1>
+		<p class="tag location">WFH Full Time Employee, Part time Student, Sydney NSW</p>
+    </header>
+
+	<!-- Start of page contents -->
+	<!-- Left Page -->
+    <main class="pageFrame">
+      <div class="card">
+		<br>
+        <h2>Personal Information</h2>
+		<hr>
+        <p>
+			<strong>Name:</strong> Aileen Chan
+			<br>
+			<strong>Student number:</strong> s3204379
+			<br>
+			<strong>Email:</strong> <a href="mailto:s3204379@student.rmit.edu.au?subject=Hi%20From%20Your%20RMIT%20Assignment1%20Site!">s3204379@student.rmit.edu.au</a>
+			<br>
+			<strong>Nationality:</strong> Singaporean
+			<br>
+			<strong>Background:</strong> I was born in Singapore, but emigrated to Western Australia in 1990. I did all of my schooling in WA, then moved to Sydney in 2006 to start my IT career.
+			<br>
+			<strong>Education to date:</strong> Highschool graduate (2000), MCSA, Comptia A+, ITIL certified
+			<br>
+			<strong>Languages spoken:</strong> English, Mandarin, Cantonese, Japanese
+			<br>
+		</p>
+      </div> 
+
+	<!-- Right Page -->
+      <div class="card">
+		<!-- Box to put photos in -->
+		<br>
+        <div class="gallery" style="max-width:300px">
+		  <img class="myPhotos" src="images/hobby/1.jpg" style="width:100%">
+		  <img class="myPhotos" src="images/hobby/2.jpg" style="width:100%">
+		  <img class="myPhotos" src="images/hobby/3.jpg" style="width:100%">
+		  <img class="myPhotos" src="images/hobby/4.jpg" style="width:100%">
+		  <img class="myPhotos" src="images/hobby/5.jpg" style="width:100%">
+		</div>
+		
+		<!-- Script to run photos -->
+		<script>
+		var myIndex = 0;
+		slider();
+
+		function slider() {
+		  var i;
+		  var x = document.getElementsByClassName("myPhotos");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(slider, 2000); // Change image every 2 seconds
+		}
+		</script>
+		<br>
+		<strong>Fun/strange fact about me:</strong>
+		I love to 'organise' and 'sort'. It gives me satisfaction to plan, analyse and find a system that works, sort out the items and set/pack them up. I believe the minimalisation of clutter/waste, gives items more function, value and life!
+      </div> 
+
+    </main>
+    <footer>
+      <p class="copyright">&copy;2021 Aileen Chan - The Constant Learner</p>
+    </footer>
+  </body>
+  </html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <title>Aileen Chan - Project Idea</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+  </head>
+  
+  <body>
+	<div class="main-nav">
+        <ul class="nav">
+			<!-- Start of Navigation Bar -->
+			<li class="name">Aileen Chan</li>
+			<li><a href="index.html">Personal Information</a></li>
+			<li><a href="interest.html">Interest in IT</a></li>
+			<li><a href="idealJob.html">Ideal Job</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			<li><a href="projectIdea.html">Project Idea</a></li>
+			<li><a href="references.html">References</a></li>
+        </ul>
+    </div>
+	
+	<header>
+		<!-- Profile Picture and Header Background -->
+		<img src="images/aicProfilePic.jpg" alt="Profile Picture" class="profile-image">
+		<h1 class="tag name">Welcome! I'm Aileen</h1>
+		<p class="tag location">WFH Full Time Employee, Part time Student, Sydney NSW</p>
+    </header>
+	
+	<!-- Start of page contents -->
+	<!-- Left Page -->
+	<main class="pageFrame">
+	<div class="card2">
+		<br>
+		<h2>Overview</h2>
+		<hr>
+		<p>
+			My project idea is to modernise the traditional Chinese paper-based calendar used by so many, particularly in Southeast Asia. Initially, I would be programming and designing an app to be device agnostic. This would be achievable with using web-based programming languages like HTML5, CSS and Javascript.
+			<br />The second phase would be to design specialised frames, similar to digital picture frames, that are decorative. Calendars are a daily aspect of our lives and I believe the hardware aspect will ultimately be useful to the user to refer to and also be aesthetically pleasing in a room.
+		</p>
+		
+		<h2>Motiviation</h2>
+		<p>
+			My inspiration for this project comes from my grandmother (seen on the right). Her generation did not grow up with computers. The common perception amongst her age group is that it is something to be feared and would be too hard to operate (for fear of breaking it).
+			<br/>My passion is to create apps that are functional, meaningful and useful. In my professional life, I provide technical support to a variety of users from various skill levels, backgrounds and cultures. I’ve seen their frustration when things go wrong and their joys when something just ‘works’. I hope to bring that to my project.
+		</p>
+	</div>
+	
+	<!-- Right Page -->
+      <div class="card2">
+		<!-- Box to put photos in -->
+		<br>
+        <div class="gallery" style="max-width:300px">
+		  <img class="myPhotos" src="images/chineseCalendar.jpg" style="width:100%">
+		  <img class="myPhotos" src="images/grandma.jpg" style="width:100%">
+		  <img class="myPhotos" src="images/digitalFrame.jpg" style="width:100%">
+		  
+		</div>
+		
+		<!-- Script to run photos -->
+		<script>
+		var myIndex = 0;
+		slider();
+
+		function slider() {
+		  var i;
+		  var x = document.getElementsByClassName("myPhotos");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(slider, 10000); // Change image every 10 seconds
+		}
+		</script>
+		<br>*Please see <a href="references.html">References</a> page for credits to calendar and photo frame.
+      </div> 
+	</main>
+	
+	<!-- Bottom Page -->
+	<div class="pageFrame2">
+		<div class="card2">
+			<h2>Description</h2>
+			<hr>
+			<p>
+				One of the main features of the app is that it allows users to be reminded of Chinese traditions and holidays. Traditionally these events are based on the Lunar calendar which has a different number of days in a year compared with the Gregorian calendar. The problem is that the majority of people in the world are using the Gregorian calendar on a day-to-day basis. The Lunar calendar has around 354 days a year and based on moon revolving around the sun. The Gregorian calendar has usually 365 days and based on earth revolving around sun. For example, Chinese New Year in 2021 was on the 12th of February in the Gregorian calendar. My app will have the Gregorian day displayed each day. It will also display any special events for the day as well as any upcoming events.
+				<br>
+				<br>
+				I would also be adding a reminder function to allow users to be alerted of events prior to the day, whether it’d be a day, week or month before (as with any special event, some sort of planning is always needed in order for things to be available).
+				With resources being limited in the world, I hope to save trees by having it in an app and digital/photo frame form. I would also add a swipe function that would provide user the ‘ripping’ satisfaction action as each day turns. Users will have the option to have the ‘ripping’ function if they wish, otherwise, they may have the date automatically change on its own.
+				<br>
+				<br>
+				A roadblock that I’m facing is figuring out whether to provide yearly updates on events or come up with an accurate formula that would update the calendar each year. The yearly updates would allow possibility of charging users a subscription fee. If I went formula route, I would have to run thru couple of tests and iterations to make sure that it is accurate.
+				<br>
+				<br>
+				One of the drawbacks of initially releasing just as an app is the inconvenience people may find with having an individual app vs their Gregorian day to day calendar. Of course, there are Chinese holiday feeds that users may subscribe to, however, I believe the act of keeping this format and its look and feel is important part preserving traditional Chinese culture in a modern way.
+				<br>
+				<br>
+				The second phase of the product would be to implement the app into a digital frame or locked down device. I believe that this would be considered an art piece for people to have in their homes and other spaces that is both functional and aesthetically pleasing. I’m unfamiliar with hardware that is in the market that would be locked down as I’m concerned with people ‘hacking’ devices and using it for malicious purposes. I would have to do more research on security protocols, whether it’d be port blocking, or using a particular operating system to control how things work, standard practices and processes.
+			</p>
+		</div>
+		
+		<div class="card2">
+			<h2>Tools and Technologies</h2>
+			<hr>
+			<p>
+			The software I would be using to program and style the web app is Notepad++. I would be using a variety of browsers to test to see how the app works like Microsoft Edge, Firefox and Google Chrome. I would be using Github to manage and handle various version of my app.
+			<br>
+			<br>
+			For hardware, I’ll be using my Windows desktop computer, keyboard and mouse. I also have an iPhone 12 which would allow me to see how it works on mobile device. Browsers like Chrome also do have the ability to use developer tools whereby I may view the app in variety of devices using the ‘Toggle device toolbar’ function.
+			</p>
+			<br>
+			<h2>Skills Required</h2>
+			<hr>
+			<p>
+			At this stage, I have some HTML and CSS skills required to do the initial framework of the app like the position of elements and main navigation bar. I would need to seek an artist or designer to assist with some of the logo and pictures as art and creativity is not my strong suite.
+			<br>
+			<br>
+			I would need to have a stronger grasp on Javascript so that I may solve and program more complex functionality on the app such as looking up times, swiping, scrolling and events. This would be achieved thru course providers like <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Codecadmy</a>, <a href="https://teamtreehouse.com/library/topic:javascript" target="_blank">TeamTreehouse </a> or <a href="https://www.w3schools.com/js/" target="_blank">W3Schools</a>.
+			</p>
+			<br>
+			<h2>Outcome</h2>
+			<hr>
+			The ultimate measure of success for me is that I would have an app that my grandmother can use with ease. I wanted to provide something that has one basic function and not over complicate the project by adding too many  options and functions that may either impede use in the first place for some users or stop me programming the app thru having to think of many scenarios and use cases. I hope that but digitalising this traditional form of calendar that it will preserve aspects of my Chinese culture and traditions.
+		</div>
+	</div>
+	
+	<footer>
+      <p class="copyright">&copy;2021 Aileen Chan - The Constant Learner</p>
+    </footer>
+	
+  </body>
+</html>

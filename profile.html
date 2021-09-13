@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <title>Aileen Chan - Personality Profiles</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+  </head>
+  
+  <body>
+	<div class="main-nav">
+        <ul class="nav">
+			<!-- Start of Navigation Bar -->
+			<li class="name">Aileen Chan</li>
+			<li><a href="index.html">Personal Information</a></li>
+			<li><a href="interest.html">Interest in IT</a></li>
+			<li><a href="idealJob.html">Ideal Job</a></li>
+			<li><a href="profile.html">Profile</a></li>
+			<li><a href="projectIdea.html">Project Idea</a></li>
+			<li><a href="references.html">References</a></li>
+        </ul>
+    </div>
+
+    <header>
+		<!-- Profile Picture and Header Background -->
+		<img src="images/aicProfilePic.jpg" alt="Profile Picture" class="profile-image">
+		<h1 class="tag name">Welcome! I'm Aileen</h1>
+		<p class="tag location">WFH Full Time Employee, Part time Student, Sydney NSW</p>
+    </header>
+	
+	<!-- Start of page contents -->
+	<!-- Left Page -->
+	<main class="pageFrame">
+	<div class="card2">
+		<br>
+		<h2>Myers-Briggs Test</h2>
+		<hr>
+		<p style="text-align:center;">
+		<img src="images/myers-briggs2.jpg">
+		</p>
+		<p><strong>Results Extracted from (09/09/2021): </strong> <a href="https://www.16personalities.com/" target="_blank">16 Personalities - NERIS Analytics Ltd</a></p>
+		<p>The results of this test are close to accurate to what I think my personality is. Depending on the situation, I would activate my extrovert-ness or introvert-ness. In a team situation, I would most likely stay true to results reflected in the test with not much influence as I'm assertive if needed when it comes to sharing of ideas I'm confident in. I put on an observance stance to allow for others to feel comfortable to contribute and collaborate. I would consider looking for team members that are different from me so as the project can be looked at different angles. For example, I would see for people that are thinkers by nature versus feeling and a mix of introverts and extroverts.
+		</p>
+	</div>
+	
+	<!-- Right Page -->
+	<div class="card2">
+		<br>
+		<h2>Learning Style Assessment - by SOAR</h2>
+		<hr>
+		<p>
+			According to SOAR (2021), there are often 3 learning styles that are identified in students:
+			<br>
+			<ul>
+				<li>Auditory</li>
+				<li>Visual</li>
+				<li>Tactile/Kinesthetic</li>
+			</ul>
+			I am a <a href="https://www.how-to-study.com/study-skills-articles/visual-learner.asp" target="_blank">visual learner</a>. The assessment is a true representation of the way I absorb information from other people, written sources, as well as audio and visual resources. It also reflects how I am able to make sense and understand material by re-creating them in graphical form in either mind maps or diagrams. These results will most likely force me to try to adapt and be sensitive with other people's learning styles when it comes to a team so that we can work together in a cooperative and collaborative way. I should take into account working and forming a team with different learning styles so that I may also learn from their them and possibly look at material in ways that I haven't discovered before.
+			
+		<br>
+		<br>
+		<br>
+		
+		<h2>The Big Five Personality Test</h2>
+		<hr>
+			<div class="gallery" style="max-width:400px">
+				<img class="myPhotos" src="images/big5-results.jpg" style="width:100%">
+				<img class="myPhotos" src="images/big5-results3.jpg" style="width:100%">
+				<img class="myPhotos" src="images/big5-results2.jpg" style="width:100%">
+			</div>
+			<p><strong>Results Extracted from (12/09/2021): </strong> <a href="https://www.truity.com/test-results/bigfive/17315/21188366" target="_blank">Truity Psychometrics LLC (2021)</a></p>
+		
+		<!-- Script to run photos -->
+		<script>
+		var myIndex = 0;
+		slider();
+
+		function slider() {
+		  var i;
+		  var x = document.getElementsByClassName("myPhotos");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(slider, 7000); // Change image every 7 seconds
+		}
+		</script>
+			Some of the Big Five test results shocked me in the percentage aspects on various dimensions of my personality. On the one hand, in the dimension of Neuroticism, I disagree with the slightly high result of 'tendency to experience negative emotions' as I consider my outlook in situations to always try to look on the bright side of things. On the other hand, the openness was accurate in that I do tend to be a bit more cautious and reserved with new ideas. These results may influence me to try to adjust and adapt more to people's ideas and make a conscious effort to understand where they are coming from. When forming a team, I hope to find other likeminded individuals that are open to new ideas. I would also hope to work with team members that are also logical and practical as we have limited time with assignments.
+		</p>
+	</div>
+	</main>
+	
+  </body>
+</html>
