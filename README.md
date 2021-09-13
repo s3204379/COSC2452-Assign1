@@ -29,8 +29,6 @@ Any advise for common problems or issues. Please email s3204379@student.rmit.edu
 
 ## Authors
 
-Contributors names and contact info
-
 Aileen Chan
 s3204379@student.rmit.edu.au
 
