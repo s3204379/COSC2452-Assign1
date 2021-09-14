@@ -8,7 +8,7 @@ The pages contains Personal Information, Interest in IT, Ideal Job, Personality 
 
 
 ## Getting Started
-Nothing to get start, pages are hosted on github
+Nothing to get started, pages are hosted on github
 
 ### Dependencies
 
