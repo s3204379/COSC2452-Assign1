@@ -1,4 +1,7 @@
 /* Global Layout Set-up */
+
+/* This style.css was extracted from course I did at https://teamtreehouse.com/library/introduction-to-html-and-css. I modified the fields and added some of my own classes in as well.*/
+
 * { 
 	box-sizing: border-box;
 }
